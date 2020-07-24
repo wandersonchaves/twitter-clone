@@ -1,0 +1,79 @@
+/* Container Follow Suggestions*/
+.containerFollowSuggestion {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+
+  flex-direction: column;
+  background: var(--secondary);
+  border-radius: 14px;
+}
+
+.itemFollowSuggestion {
+  display: flex;
+  padding: 10px 16px;
+}
+
+.itemFollowSuggestion + .itemFollowSuggestion {
+  border-top: 1px solid var(--outline);
+}
+
+.itemFollowSuggestion:first-child {
+  padding-top: 13px;
+}
+
+.itemFollowSuggestion:last-child {
+  padding-bottom: 17px;
+}
+
+.titleFollowSuggestion {
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.avatarFollowSuggestion {
+  width: 49px;
+  height: 49px;
+  background: var(--gray);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.infoFollowSuggestion {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoFollowSuggestion strong {
+  font-size: 14px;
+}
+
+.infoFollowSuggestion span {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.outlinedFollowButton {
+  padding: 16px;
+  border-radius: 25px;
+
+  font-weight: bold;
+  font-size: 15px;
+
+  cursor: pointer;
+  outline: 0;
+
+  padding: 6px 17px;
+
+  margin-left: auto;
+}
+
+.outlinedFollowButton {
+  background: transparent;
+  color: var(--twitter);
+  border: 1px solid var(--twitter);
+}
+
+.outlinedFollowButton:hover {
+  background: var(--twitter-dark-hover);
+}

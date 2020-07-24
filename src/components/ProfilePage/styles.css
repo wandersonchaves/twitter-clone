@@ -1,4 +1,4 @@
-.container {
+.containerProfilePage {
   display: flex;
   flex-direction: column;
 
@@ -8,7 +8,7 @@
   scrollbar-width: none; /* Firefox */
 }
 
-::-webkit-scrollbar {
+.containerProfilePage::-webkit-scrollbar {
   display: none;
 }
 
@@ -23,9 +23,9 @@
   position: relative;
 }
 
-.avatar {
-  width: max(45px, min(135px, 22vw));
-  height: max(45px, min(135px, 22vw));
+.avatarProfilePage {
+  width: max(15px, min(135px, 22vw));
+  height: max(15px, min(135px, 22vw));
 
   border: 3.75px solid var(--primary);
   background: var(--gray);
@@ -36,7 +36,7 @@
   left: 15px;
 }
 
-.profile-data {
+.profileData {
   padding: min(calc(10vw + 7px), 67px) 16px 0;
 
   display: flex;
@@ -45,60 +45,93 @@
   position: relative;
 }
 
-.profile-data h1 {
+.profileData h1 {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 19px;
 }
 
-.profile-data h2 {
+.profileData h2 {
   font-weight: normal;
   font-size: 15px;
 
   color: var(--gray);
 }
 
-.profile-data p {
+.profileData p {
   font-size: 15px;
   margin-top: 11px;
 }
 
-.profile-data p a {
+.profileData p a {
   text-decoration: none;
   color: var(--twitter);
 }
 
-.profile-data ul {
+.profileData ul {
   list-style: none;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.profile-data ul li {
+.profileData ul li {
   font-size: 15px;
   color: var(--gray);
 }
 
-.profile-data ul li svg {
+.profileData ul li svg {
   fill: var(--gray);
   margin-right: 5px;
 }
 
-.follow-age {
-  display: flex;
-}
-
-.follow-age span {
-  font-size: 15px;
-  color: var(--gray);
-}
-
-.follow-age span + span {
-  margin-left: 20px;
-}
-
-svg {
+.locationOn,
+.cake {
   width: 20px;
   height: 20px;
 
   color: var(--gray);
+}
+
+.followAge {
+  display: flex;
+}
+
+.followAge span {
+  font-size: 15px;
+  color: var(--gray);
+}
+
+.followAge span + span {
+  margin-left: 20px;
+}
+
+.outlined {
+  position: absolute;
+  top: 2vw;
+  right: 7px;
+
+  padding: 4px 16px;
+  font-size: 13px;
+
+  border-radius: 25px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+  outline: 0;
+
+  background: transparent;
+  color: var(--twitter);
+  border: 1px solid var(--twitter);
+}
+
+@media (min-width: 320px) {
+  .outlined {
+    top: 10px;
+    padding: 10px 19px;
+    font-size: 15px;
+  }
+}
+
+.outlined:hover {
+  background: var(--twitter-dark-hover);
 }

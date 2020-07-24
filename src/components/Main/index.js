@@ -13,25 +13,25 @@ import './styles.css';
 
 export default function Main() {
   return (
-    <div className="container">
-      <div className="header">
-        <button className="backIcon">
-          <ArrowLeft />
+    <div className="containerMain">
+      <div className="headerMain">
+        <button>
+          <ArrowLeft className="arrowLeft" />
         </button>
 
-        <div className="profile-info">
+        <div className="profileInfo">
           <strong>Wanderson Chaves</strong>
-          <span>362 Tweets</span>
+          <span>450 Tweets</span>
         </div>
       </div>
 
       <ProfilePage />
 
-      <div className="bottom-menu">
-        <Home />
-        <Search />
-        <Notifications />
-        <Chat />
+      <div className="bottomMenu">
+        <Home className="homeMain active" />
+        <Search className="searchMain" />
+        <Notifications className="notificationsMain" />
+        <Chat className="chatMain" />
       </div>
     </div>
   );

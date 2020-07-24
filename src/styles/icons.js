@@ -11,4 +11,6 @@ export {
   Favorite,
   ArrowLeft,
   Chat,
+  ReplySharp,
+  Twitter,
 } from '@material-ui/icons';

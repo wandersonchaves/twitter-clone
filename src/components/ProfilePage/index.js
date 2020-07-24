@@ -1,17 +1,19 @@
 import React from 'react';
 
+import Feed from '../Feed';
+
 import { LocationOn, Cake } from '../../styles/icons';
 import './styles.css';
 
 export default function index() {
   return (
-    <div className="container">
+    <div className="containerProfilePage">
       <div className="banner">
-        <div className="avatar"></div>
+        <div className="avatarProfilePage"></div>
       </div>
 
-      <div className="profile-data">
-        <button>Editar Perfil</button>
+      <div className="profileData">
+        <button className="outlined">Editar Perfil</button>
 
         <h1>Wanderson Chaves</h1>
         <h2>@wanderson_chaves</h2>
@@ -22,14 +24,14 @@ export default function index() {
 
         <ul>
           <li>
-            <LocationOn /> Piauí, Brasil
+            <LocationOn className="locationOn" /> Piauí, Brasil
           </li>
           <li>
-            <Cake /> Nascido(a) em 14 de junho de 1999
+            <Cake className="cake" /> Nascido(a) em 14 de junho de 1999
           </li>
         </ul>
 
-        <div className="follow-age">
+        <div className="followAge">
           <span>
             Seguindo <strong>94</strong>
           </span>
@@ -38,6 +40,8 @@ export default function index() {
           </span>
         </div>
       </div>
+
+      <Feed />
     </div>
   );
 }
